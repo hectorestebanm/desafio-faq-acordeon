@@ -24,13 +24,17 @@ acordeones.forEach((acordeon, i) =>
     {
         var parrafo = acordeon.nextElementSibling;
         parrafo.classList.toggle("acordeon__p__active");
-        if(imagenes[i].src === "assets/images/icon-plus.svg")
+        // if(imagenes[i].src === "assets/images/icon-plus.svg")    // No funciona con esta sintaxis
+        if(imagenes[i].src === "http://127.0.0.1:5500/faq-accordion-main/assets/images/icon-plus.svg")
         {
+            // alert("Se cambio a imagen menos");
             imagenes[i].src = "assets/images/icon-minus.svg";
         }
         else
         {
-            imagenes[i].src = "assets/images/icon-minus.svg";
+            // alert("Se cambio a imagen mas");
+            imagenes[i].src = "assets/images/icon-plus.svg";
         }
+        // alert(imagenes[i].src); // Para saber la ruta exacta de la imagen
     });
 });
