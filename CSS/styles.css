@@ -1,0 +1,105 @@
+:root
+{
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(293, 85%, 74%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--Light-pink);
+}
+
+.main__faq
+{
+    width: 330px;
+    margin: 0 auto;
+    padding: 26px;
+    background-color: var(--White);
+}
+
+.main__faq__titulo
+{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.main__faq__titulo__imagen
+{
+    width: 22px;
+    margin-right: 15px;
+}
+
+.main__faq__titulo__h1
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+.acordeon
+{
+
+}
+
+.margin__hr
+{
+    margin: 20px 0;
+}
+
+.acordeon__visible
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.acordeon__visible__h2
+{
+    font-size: 17px;
+}
+
+/* h1::after
+{
+    content: url("../assets/images/icon-minus.svg");
+} */
+
+/* .acordeon__visible__imagen_active::after
+{
+    content: url(../assets/images/icon-minus.svg);
+} */
+
+.acordeon__p
+{
+    display: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: var(--Grayish-purple);
+}
+
+.acordeon__p__active
+{
+    display: block;
+}
+
+.attribution
+{
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
